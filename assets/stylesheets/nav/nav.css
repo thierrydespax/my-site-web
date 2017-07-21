@@ -1,0 +1,57 @@
+/* line 1, ../../sass/nav/nav.scss */
+body > nav {
+  z-index: 9;
+  /*background: #ffffff;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: right;
+  padding: 1em;
+}
+
+/* line 11, ../../sass/nav/nav.scss */
+nav a {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 15, ../../sass/nav/nav.scss */
+nav a + a {
+  transition: all 0.5s;
+  opacity: 0.7;
+  display: inline-block;
+  background: blanchedalmond;
+  padding: .85em 1.5em;
+  margin: 0 0.5em;
+}
+
+/* line 25, ../../sass/nav/nav.scss */
+.logo {
+  margin-top: -5em;
+  transition: all 1s linear;
+  float: left;
+  opacity: 0.7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 32, ../../sass/nav/nav.scss */
+logo:hover {
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 36, ../../sass/nav/nav.scss */
+.logo img {
+  height: 3em;
+}
+
+/* line 39, ../../sass/nav/nav.scss */
+nav a + a:hover {
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 44, ../../sass/nav/nav.scss */
+nav:hover .logo {
+  margin-top: 0;
+  transition: all 1s linear;
+}

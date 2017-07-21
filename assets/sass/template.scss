@@ -1,0 +1,29 @@
+body {
+    position:absolute;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'lemonmilkregular';
+}
+
+body > header {
+    height:90%;
+    position: relative;
+    background-image: url(./../images/photo-ordi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index:8;
+}
+
+#about {
+    display: none;
+}
+
+#about:target{
+    display:block;
+}
+
+#contact .btn {
+    color:white !important;
+}

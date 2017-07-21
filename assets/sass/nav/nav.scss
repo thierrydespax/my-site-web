@@ -1,0 +1,47 @@
+body > nav {
+    z-index:9;
+    /*background: #ffffff;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align:right;
+    padding: 1em;
+}
+
+nav a {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    
+nav a + a {
+    transition: all 0.5s;
+    opacity: 0.7;
+    display:inline-block;
+     background: blanchedalmond;
+    padding: .85em 1.5em;
+    margin:0 0.5em;
+    }
+    
+    
+.logo {
+    margin-top: -5em;
+    transition: all 1s linear;
+    float:left; 
+    opacity: 0.7;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+}
+logo:hover {
+    opacity: 1;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.logo img {
+    height: 3em;
+   }
+nav a + a:hover {
+    opacity: 1;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+nav:hover .logo{
+    margin-top: 0;
+    transition: all 1s linear; 
+}   

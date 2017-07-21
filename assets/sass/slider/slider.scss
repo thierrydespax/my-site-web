@@ -1,0 +1,54 @@
+h1 {
+    background-color: #04E80C;
+}    
+body > header > div {
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    height: 30%;
+    overflow: hidden;
+   }
+body > header > p {
+   position: absolute;
+   background: #ffffff;
+   bottom: 30%;
+   text-align: center;
+   line-height: 2em;
+}
+h1 {
+    position:absolute;
+    text-align: center;
+    bottom: 50%;
+    }
+     body > header .language{
+    position:relative;
+    height: 70%;   
+    opacity: 0;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+     }
+    body > header .php {
+    animation-name: php;
+    top: 115%;
+    }
+   body > header .java {
+    animation-name: java;
+    top: 215%;
+    
+   }
+    body > header .android {
+    animation-name: android;
+    top: 315%;
+    
+    }
+    body > header .js {
+    animation-name: js;
+    top: 415%;
+   
+    }
+    body > header .html{
+    animation-name: html; 
+    top: 515%;
+    }
+    
+    

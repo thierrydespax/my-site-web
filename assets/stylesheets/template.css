@@ -1,0 +1,34 @@
+/* line 1, ../sass/template.scss */
+body {
+  position: absolute;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'lemonmilkregular';
+}
+
+/* line 8, ../sass/template.scss */
+body > header {
+  height: 90%;
+  position: relative;
+  background-image: url(./../images/photo-ordi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 8;
+}
+
+/* line 19, ../sass/template.scss */
+#about {
+  display: none;
+}
+
+/* line 23, ../sass/template.scss */
+#about:target {
+  display: block;
+}
+
+/* line 27, ../sass/template.scss */
+#contact .btn {
+  color: white !important;
+}

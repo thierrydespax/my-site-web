@@ -1,0 +1,70 @@
+@keyframes php {
+  0% {
+    top: 115%;
+    opacity: 0;
+  }
+  4%,16% {
+    top: 15%;
+    opacity: 1;
+  }
+  20%,100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes java {
+  20% {
+    top: 115%;
+    opacity: 0;
+  }
+  24%,36% {
+    top: 15%;
+    opacity: 1;
+  }
+  40%,120% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes android {
+  40% {
+    top: 115%;
+    opacity: 0;
+  }
+  44%,56% {
+    top: 15%;
+    opacity: 1;
+  }
+  60%,140% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes js {
+  60% {
+    top: 115%;
+    opacity: 0;
+  }
+  64%,76% {
+    top: 15%;
+    opacity: 1;
+  }
+  80%,160% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes html {
+  80% {
+    top: 115%;
+    opacity: 0;
+  }
+  84%,96% {
+    top: 15%;
+    opacity: 1;
+  }
+  100%,180% {
+    top: -115%;
+    opacity: 0;
+  }
+}

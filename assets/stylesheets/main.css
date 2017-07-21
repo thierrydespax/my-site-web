@@ -1,0 +1,261 @@
+/* line 1, ../sass/reset.scss */
+html, body, nav, header, section, div, footer, h1, h2, p {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/reset.scss */
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* line 13, ../sass/reset.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 17, ../sass/reset.scss */
+.row {
+  margin: 0 !important;
+}
+
+/* line 1, ../sass/template.scss */
+body {
+  position: absolute;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'lemonmilkregular';
+}
+
+/* line 8, ../sass/template.scss */
+body > header {
+  height: 90%;
+  position: relative;
+  background-image: url(./../images/photo-ordi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 8;
+}
+
+/* line 19, ../sass/template.scss */
+#about {
+  display: none;
+}
+
+/* line 23, ../sass/template.scss */
+#about:target {
+  display: block;
+}
+
+/* line 27, ../sass/template.scss */
+#contact .btn {
+  color: white !important;
+}
+
+@keyframes php {
+  0% {
+    top: 115%;
+    opacity: 0;
+  }
+  4%,16% {
+    top: 15%;
+    opacity: 1;
+  }
+  20%,100% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes java {
+  20% {
+    top: 115%;
+    opacity: 0;
+  }
+  24%,36% {
+    top: 15%;
+    opacity: 1;
+  }
+  40%,120% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes android {
+  40% {
+    top: 115%;
+    opacity: 0;
+  }
+  44%,56% {
+    top: 15%;
+    opacity: 1;
+  }
+  60%,140% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes js {
+  60% {
+    top: 115%;
+    opacity: 0;
+  }
+  64%,76% {
+    top: 15%;
+    opacity: 1;
+  }
+  80%,160% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@keyframes html {
+  80% {
+    top: 115%;
+    opacity: 0;
+  }
+  84%,96% {
+    top: 15%;
+    opacity: 1;
+  }
+  100%,180% {
+    top: -115%;
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: 'lemonmilkregular';
+  src: url(./../font/lemonmilk-webfont.woff) format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+/* line 1, ../sass/nav/nav.scss */
+body > nav {
+  z-index: 9;
+  /*background: #ffffff;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: right;
+  padding: 1em;
+}
+
+/* line 11, ../sass/nav/nav.scss */
+nav a {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 15, ../sass/nav/nav.scss */
+nav a + a {
+  transition: all 0.5s;
+  opacity: 0.7;
+  display: inline-block;
+  background: blanchedalmond;
+  padding: .85em 1.5em;
+  margin: 0 0.5em;
+}
+
+/* line 25, ../sass/nav/nav.scss */
+.logo {
+  margin-top: -5em;
+  transition: all 1s linear;
+  float: left;
+  opacity: 0.7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 32, ../sass/nav/nav.scss */
+logo:hover {
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 36, ../sass/nav/nav.scss */
+.logo img {
+  height: 3em;
+}
+
+/* line 39, ../sass/nav/nav.scss */
+nav a + a:hover {
+  opacity: 1;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 44, ../sass/nav/nav.scss */
+nav:hover .logo {
+  margin-top: 0;
+  transition: all 1s linear;
+}
+
+/* line 1, ../sass/slider/slider.scss */
+h1 {
+  background-color: #04E80C;
+}
+
+/* line 4, ../sass/slider/slider.scss */
+body > header > div {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  overflow: hidden;
+}
+
+/* line 11, ../sass/slider/slider.scss */
+body > header > p {
+  position: absolute;
+  background: #ffffff;
+  bottom: 30%;
+  text-align: center;
+  line-height: 2em;
+}
+
+/* line 18, ../sass/slider/slider.scss */
+h1 {
+  position: absolute;
+  text-align: center;
+  bottom: 50%;
+}
+
+/* line 23, ../sass/slider/slider.scss */
+body > header .language {
+  position: relative;
+  height: 70%;
+  opacity: 0;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+/* line 30, ../sass/slider/slider.scss */
+body > header .php {
+  animation-name: php;
+  top: 115%;
+}
+
+/* line 34, ../sass/slider/slider.scss */
+body > header .java {
+  animation-name: java;
+  top: 215%;
+}
+
+/* line 39, ../sass/slider/slider.scss */
+body > header .android {
+  animation-name: android;
+  top: 315%;
+}
+
+/* line 44, ../sass/slider/slider.scss */
+body > header .js {
+  animation-name: js;
+  top: 415%;
+}
+
+/* line 49, ../sass/slider/slider.scss */
+body > header .html {
+  animation-name: html;
+  top: 515%;
+}
